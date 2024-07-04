@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --primary-color: #7335b7;
+    --secondary-color: #f8842b;
+    --secondary-light:#edc53614;
+    --color-white: #fff;
+    --font-main: font-main;
+}
+
+body {
+    background-color: #ffffff;
+    color: #444444;
+    position: relative;
+    direction: ltr;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.header {
+    margin-top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.card-fixed {
+    border-radius: 0 0 50px 0;
+    padding: 5px 10px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-fixed h3 {
+    display: none;
+}
+
+.card-fixed img {
+    width: 50px;
+}
+
+.card-fixed .btn-box {
+    margin-top: 5px;
+    margin-left: 10px
+}
+
+.card-fixed .btn-box .btn-light2 {
+    background-color: #f8842b;
+    border: none;
+
+}
+
+.card-fixed .btn-box a {
+    color: #ffffff !important;
+    width: 85px;
+}
+
+.hero-card {
+    padding: 75px 0;
+    /* background-color: #685e68; */
+    background-color: #7335b7;
+    border-radius: 0 0 350px 0;
+    /* border-radius: 250px 0 250px 0; */
+    min-height: 100vh;
+}
+
+.hero-card h1 {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: 10px 10px;
+}
+
+.hero-card .container .row {
+    align-items: center;
+}
+
+.hero-card .img-box img {
+    width: 100%;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.hero-card .box-info {
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 -5px;
+    margin-top: 45px;
+}
+
+.btn-box .btn-light2 {
+    display: inline-block;
+    padding: 12px 15px;
+    background-color: #5a2a8f;
+    background-color: #f8842b;
+    color: #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid #5a2a8f;
+    border: 1px solid #f8842b;
+}
+
+.btn-box a {
+    margin: 5px;
+    text-align: center;
+    width: 185px;
+    text-decoration: none;
+}
+
+.hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 576px) {
+
+    .card-fixed .btn-box a {
+        width: 75px;
+    }
+
+    .card-fixed h5 {
+        font-size: 18px;
+    }
+
+    .card-fixed img {
+        width: 40px;
+    }
+
+    .card-fixed .btn-box .btn-light2 {
+        width: 70px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 376px) {
+    .card-fixed h3 {
+        display: block;
+    }
+
+    .card-fixed h5 {
+        display: none;
+    }
+
+    .card-fixed .btn-box a {
+        width: 70px;
+    }
+
+    .card-fixed img {
+        width: 40px;
+    }
+
+    .card-fixed .btn-box .btn-light2 {
+        width: 60px;
+        padding: 5px;
+    }
+}
+
+
+/*------------ about application style -----------------*/
+
+.about {
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.about ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: var(--primary-color);
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ======- FOOTER -====== */
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #5a2a8f;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    margin-left: 5px;
+
+}
+
+footer a i {
+    color: #ffffff;
+}

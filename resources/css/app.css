@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: font-main;
+    src: url("../vendor/fonts/Cairo-VariableFont_slnt,wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --primary-color: #7335b7;
+    --secondary-color: #f8842b;
+    --secondary-light:#edc53614;
+    --color-white: #fff;
+    --font-main: font-main;
+}
+
+body {
+    font-family: var(--font-main);
+    color: #444444;
+    direction:ltr;
+}
+.min-h-screen{
+background-color: var(--primary-color);
+}
+.bg-primary{
+    background-color: var(--primary-color);
+}
+.bg-secondary{
+    background-color: var(--secondary-color);
+}
+.text-gray-700{
+    color: #ffffff;
+}
+.bg-gray-800{
+    background-color:#ffe177 ;
+}
+.text-black{
+    color: #1a1919;
+}
+.text-primary{
+    color: var(--primary-color);
+}
+.text-secondary{
+    color: var(--secondary-color);
+}
+.text-sm{
+    color: var(--primary-color);
+}
+.title-h{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.title-sub{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.h-20{
+    height: 10rem;
+}
+.w-20{
+    width: 10rem;
+}
+
+.shadow-sm{
+    box-shadow: 0 0 2px var(--primary-color);
+}
+.border-gray-300{
+    border-color: var(--primary-color) !important;
+}
+.title-project{
+    border-radius: 15px;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+.title-project h1{
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.card-title-auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
