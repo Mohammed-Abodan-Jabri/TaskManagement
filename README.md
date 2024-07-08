@@ -1,4 +1,5 @@
-<img src="/public/assets/img/logo-app.png"  width="30%"/>
+<img src="/public/assets/img/Dashboard.jpeg"  width="50%"/>
+<img src="/public/assets/img/landing-page.jpeg"  width="50%"/>
 # Task Management Application 
 
 Welcome to Task Management,
